@@ -1,0 +1,4 @@
+import numpy as np
+
+#THIS FILE IS FOR READING THE CONTENTS OF THE IMAGES AND FORMATTING THEM INTO ACCESSIBLE DATA
+#For example, turning all the
