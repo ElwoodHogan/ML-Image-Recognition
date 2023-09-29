@@ -4,6 +4,8 @@ import os, shutil, sys
 #THIS FILE IS FOR READING THE CONTENTS OF THE IMAGES AND FORMATTING THEM INTO ACCESSIBLE DATA
 #For example, turning all the images into 1000x1000 images, and saving them to a new folder
 
+ImageLimit = 20000
+
 #deletes the contents of the folder
 def ClearFolder(pathToFolder):
     folder = pathToFolder
@@ -113,6 +115,6 @@ def searchFiles():
             
             ImageIndex += 1
             #return
-            if(ImageIndex > 300): return
+            if(ImageIndex > ImageLimit): return
 
 searchFiles()
