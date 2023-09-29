@@ -2,3 +2,6 @@
 testing Images
 training Images
 validation Images
+TestLabels.txt
+TrainLabels.txt
+ValLabels.txt

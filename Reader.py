@@ -4,6 +4,7 @@ import os, shutil, sys
 #THIS FILE IS FOR READING THE CONTENTS OF THE IMAGES AND FORMATTING THEM INTO ACCESSIBLE DATA
 #For example, turning all the images into 1000x1000 images, and saving them to a new folder
 
+#deletes the contents of the folder
 def ClearFolder(pathToFolder):
     folder = pathToFolder
     for filename in os.listdir(folder): 
@@ -23,10 +24,12 @@ testingFolder = "testing Images"
 validationFolder = "validation Images"
 
 script_directory = os.path.dirname(os.path.abspath(sys.argv[0]))
+
 pathTotrainingFolder = os.path.join(script_directory, trainingFolder)
 pathTotestingFolder = os.path.join(script_directory, testingFolder)
 pathTovalidationFolder = os.path.join(script_directory, validationFolder)
 
+#Creates the folder if theyre not already present
 try:
     os.mkdir(pathTotrainingFolder)
 except Exception as e:
@@ -53,25 +56,16 @@ def findImageInData(imageDirec):
     with open("Image Database\labels\\test.txt") as file:
         for line in file:
             if imageDirec in line:
-                #print("test")
-                #print(line.rstrip()[-1])
-                #return "Test " + line.rstrip()[-1], 0
                 return line.rstrip()[-1], 0
             
     with open("Image Database\labels\\train.txt") as file:
         for line in file:
             if imageDirec in line:
-                #print("train")
-                #print(line.rstrip())
-                #return "train " + line.rstrip()[-1], 1
                 return line.rstrip()[-1], 1
             
     with open("Image Database\labels\\val.txt") as file:
         for line in file:
             if imageDirec in line:
-                #print("valyee")
-                #print(line.rstrip())
-                #return "val " + line.rstrip()[-1], 2
                 return line.rstrip()[-1], 2
 
 def searchFiles():
@@ -93,6 +87,7 @@ def searchFiles():
     for subdir, dirs, files in os.walk('Image Database\images'):
         for file in files:
             fileDir = os.path.join(subdir, file)
+
             image = Image.open(fileDir)
             new_image = image.resize((1000, 1000))
             ImageName = "NewImage" + str(ImageIndex) + ".tif"
@@ -103,23 +98,17 @@ def searchFiles():
 
             Newline, dataType = findImageInData(rawDirec)
             
-            
-            #print(rawDirec)
-            
-
-            
             #0 == testing, 1 == training, 2 == validation
             match dataType:
                 case 0: 
                     new_image.save(os.path.join(pathTotestingFolder, ImageName))
-                    #testData.write(str(ImageIndex) + " " + Newline + "\n")
-                    testData.write(str(ImageIndex) + " " + Newline + "\n")
+                    testData.write(str(Newline) + "\n")
                 case 1: 
                     new_image.save(os.path.join(pathTotrainingFolder, ImageName))
-                    #trainData.write(str(ImageIndex) + " " + Newline + "\n")
+                    trainData.write(str(Newline) + "\n")
                 case 2: 
                     new_image.save(os.path.join(pathTovalidationFolder, ImageName))
-                    #valData.write(str(ImageIndex) + " " + Newline + "\n")
+                    valData.write(str(Newline) + "\n")
 
             
             ImageIndex += 1
