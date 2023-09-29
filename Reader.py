@@ -1,10 +1,17 @@
 import numpy as np
 from PIL import Image
 import os, shutil, sys
+import time
 #THIS FILE IS FOR READING THE CONTENTS OF THE IMAGES AND FORMATTING THEM INTO ACCESSIBLE DATA
 #For example, turning all the images into 1000x1000 images, and saving them to a new folder
 
+#How many images do you want to process?  Any number above 400,000 will be all the images
 ImageLimit = 20000
+
+#how often do you want to be shown percentage updates?  smaller == more updates
+percentThreshholdStep = .03
+
+start = time.time()
 
 #deletes the contents of the folder
 def ClearFolder(pathToFolder):
@@ -71,7 +78,9 @@ def findImageInData(imageDirec):
                 return line.rstrip()[-1], 2
 
 def searchFiles():
-
+    
+    percentThreshhold = percentThreshholdStep
+    percentDone = 0
     ImageIndex = 0
 
     NewTestFileName = 'TestLabels.txt'
@@ -86,6 +95,7 @@ def searchFiles():
     trainData = open(PathToNewTrainFileNamee, 'w')
     valData = open(PathToNewValFileName, 'w')
 
+    
     for subdir, dirs, files in os.walk('Image Database\images'):
         for file in files:
             fileDir = os.path.join(subdir, file)
@@ -114,7 +124,17 @@ def searchFiles():
 
             
             ImageIndex += 1
+
+            #printing percent done
+            percentDone = round(ImageIndex/ImageLimit, 2)
+            if(percentDone > percentThreshhold): 
+                toString = ('%.1f' % (percentDone*100)).replace('.0', '')
+                print(toString + "% Percent done")
+                percentThreshhold+=percentThreshholdStep
             #return
             if(ImageIndex > ImageLimit): return
 
 searchFiles()
+
+end = time.time()
+print(end - start)
