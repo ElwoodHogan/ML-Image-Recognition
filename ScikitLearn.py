@@ -1,11 +1,10 @@
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import SGDClassifier
 from PIL import Image
-import os, shutil, sys
+import os, shutil, sys, time
 import numpy as np
 from sklearn import svm
 import time
-import Recipe
 
 start = time.time()
 
@@ -37,7 +36,6 @@ print("Creating initial arrays")
 CreateTrainingArrays()
 CreateTestingArrays()
 
-print("Total size of Xtrain: "+ str(Recipe.total_size(Xtrain, verbose=True)))
 
 #scikit only accepts 2d arrays, so we must first converty the 1000,1000 arrays into a 1000000 array
 print("Formatting Training")
