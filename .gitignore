@@ -5,3 +5,4 @@ validation Images
 TestLabels.txt
 TrainLabels.txt
 ValLabels.txt
+progress.txt

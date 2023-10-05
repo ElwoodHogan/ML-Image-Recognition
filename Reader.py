@@ -6,7 +6,15 @@ import time
 #For example, turning all the images into 1000x1000 images, and saving them to a new folder
 
 #How many images do you want to process?  Any number above 400,000 will be all the images
-ImageLimit = 20000
+ImageLimit = 10
+
+#if you want to start from scratch, setting this to true will reset the progress file
+resetProgress = True
+
+#these are only applied if reseting
+NewTestFileName = 'TestLabels.txt'
+NewTrainFileName = 'TrainLabels.txt'
+NewValFileName = 'ValLabels.txt'
 
 #how often do you want to be shown percentage updates?  smaller == more updates
 percentThreshholdStep = .03
@@ -27,12 +35,19 @@ def ClearFolder(pathToFolder):
             print('Failed to delete %s. Reason: %s' % (file_path, e))
 
 
+    
+    
 
 trainingFolder = "training Images"
 testingFolder = "testing Images"
 validationFolder = "validation Images"
 
 script_directory = os.path.dirname(os.path.abspath(sys.argv[0]))
+
+PathToNewTestFileName = os.path.join(script_directory, NewTestFileName)
+PathToNewTrainFileNamee = os.path.join(script_directory, NewTrainFileName)
+PathToNewValFileName = os.path.join(script_directory, NewValFileName)
+
 
 pathTotrainingFolder = os.path.join(script_directory, trainingFolder)
 pathTotestingFolder = os.path.join(script_directory, testingFolder)
@@ -54,13 +69,6 @@ try:
 except Exception as e:
     True #if the folder is already created, do nothing
 
-
-ClearFolder(pathTotrainingFolder)
-ClearFolder(pathTotestingFolder)
-ClearFolder(pathTovalidationFolder)
-
-
-
 def findImageInData(imageDirec):
     with open("Image Database\labels\\test.txt") as file:
         for line in file:
@@ -79,25 +87,28 @@ def findImageInData(imageDirec):
 
 def searchFiles():
     
+    progressFile = open("progress.txt", "r+")
+    progress = int(progressFile.readline())
+    progressFile.close()
+    print(progress)
+
     percentThreshhold = percentThreshholdStep
     percentDone = 0
     ImageIndex = 0
 
-    NewTestFileName = 'TestLabels.txt'
-    NewTrainFileName = 'TrainLabels.txt'
-    NewValFileName = 'ValLabels.txt'
-
-    PathToNewTestFileName = os.path.join(script_directory, NewTestFileName)
-    PathToNewTrainFileNamee = os.path.join(script_directory, NewTrainFileName)
-    PathToNewValFileName = os.path.join(script_directory, NewValFileName)
-
-    testData = open(PathToNewTestFileName, 'w')
-    trainData = open(PathToNewTrainFileNamee, 'w')
-    valData = open(PathToNewValFileName, 'w')
+    
+    testData = open(PathToNewTestFileName, 'r+')
+    trainData = open(PathToNewTrainFileNamee, 'r+')
+    valData = open(PathToNewValFileName, 'r+')
+    
 
     
     for subdir, dirs, files in os.walk('Image Database\images'):
         for file in files:
+            if ImageIndex < progress: 
+                ImageIndex+=1
+                continue
+
             fileDir = os.path.join(subdir, file)
 
             image = Image.open(fileDir)
@@ -132,7 +143,27 @@ def searchFiles():
                 print(toString + "% Percent done")
                 percentThreshhold+=percentThreshholdStep
             #return
-            if(ImageIndex > ImageLimit): return
+            if(ImageIndex > ImageLimit + progress): 
+                progressFile = open("progress.txt", "w")
+                progressFile.write(str(ImageLimit + progress))
+                progressFile.close()
+                return
+
+def ClearProgress():
+    ClearFolder(pathTotrainingFolder)
+    ClearFolder(pathTotestingFolder)
+    ClearFolder(pathTovalidationFolder)
+
+    testData = open(PathToNewTestFileName, 'w')
+    trainData = open(PathToNewTrainFileNamee, 'w')
+    valData = open(PathToNewValFileName, 'w')
+
+    progressFile = open("progress.txt", "w")
+    progressFile.write("0")
+    progressFile.close()
+
+if resetProgress:
+    ClearProgress()
 
 searchFiles()
 
