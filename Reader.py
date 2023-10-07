@@ -6,7 +6,7 @@ import time
 #For example, turning all the images into 1000x1000 images, and saving them to a new folder
 
 #How many images do you want to process?  Any number above 400,000 will be all the images
-ImageLimit = 10
+ImageLimit = 20000
 
 #if you want to start from scratch, setting this to true will reset the progress file
 resetProgress = True
@@ -96,12 +96,10 @@ def searchFiles():
     percentDone = 0
     ImageIndex = 0
 
-    
-    testData = open(PathToNewTestFileName, 'r+')
-    trainData = open(PathToNewTrainFileNamee, 'r+')
-    valData = open(PathToNewValFileName, 'r+')
-    
-
+    #opens the labels in append mode
+    testData = open(PathToNewTestFileName, 'a')
+    trainData = open(PathToNewTrainFileNamee, 'a')
+    valData = open(PathToNewValFileName, 'a')
     
     for subdir, dirs, files in os.walk('Image Database\images'):
         for file in files:
@@ -121,6 +119,7 @@ def searchFiles():
 
             Newline, dataType = findImageInData(rawDirec)
             
+            #appends to the label files
             #0 == testing, 1 == training, 2 == validation
             match dataType:
                 case 0: 
@@ -137,27 +136,31 @@ def searchFiles():
             ImageIndex += 1
 
             #printing percent done
-            percentDone = round(ImageIndex/ImageLimit, 2)
+            percentDone = round((ImageIndex-progress)/(ImageLimit), 2)
             if(percentDone > percentThreshhold): 
                 toString = ('%.1f' % (percentDone*100)).replace('.0', '')
                 print(toString + "% Percent done")
                 percentThreshhold+=percentThreshholdStep
             #return
-            if(ImageIndex > ImageLimit + progress): 
+            if(ImageIndex >= ImageLimit + progress): 
                 progressFile = open("progress.txt", "w")
                 progressFile.write(str(ImageLimit + progress))
                 progressFile.close()
                 return
 
 def ClearProgress():
+
+    #deletes the contents of the folders
     ClearFolder(pathTotrainingFolder)
     ClearFolder(pathTotestingFolder)
     ClearFolder(pathTovalidationFolder)
 
+    #deletes the contents of the labels
     testData = open(PathToNewTestFileName, 'w')
     trainData = open(PathToNewTrainFileNamee, 'w')
     valData = open(PathToNewValFileName, 'w')
 
+    #saves 0 to the progress file
     progressFile = open("progress.txt", "w")
     progressFile.write("0")
     progressFile.close()

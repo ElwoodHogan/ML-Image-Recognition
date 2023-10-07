@@ -42,13 +42,14 @@ Xtrain = np.array(Xtrain)
 Xtest = np.array(Xtest)
 print("Done creating initial arrays, Time: " + str(time.time() - start))
 
-
+total = len(Xtrain)
+print(total)
 # Initialize weights and bias.
 input_dim = len(Xtrain[1])
 output_dim = num_classes
 learning_rate = 0.01
-epochs = 1000
-batch_size = 100
+epochs = 1
+batch_size = 8000
 
 weights = np.zeros((input_dim, output_dim))
 bias = np.zeros(output_dim)
@@ -61,35 +62,44 @@ for epoch in range(epochs):
         x_batch_flat = Xtrain[i:i+batch_size]
         y_batch = Ytrain[i:i+batch_size]
 
-        print("Done batching, Time: " + str(time.time() - start))
+        #print("Done batching, Time: " + str(time.time() - start))
 
         # Forward pass.
         logits = np.dot(x_batch_flat, weights) + bias
-        exp_logits = np.exp(logits)
-        predicted_probs = exp_logits / np.sum(exp_logits, axis=1, keepdims=True)
+        #print("Done Logits, Time: " + str(time.time() - start))
 
-        print("Done Passing, Time: " + str(time.time() - start))
+        exp_logits = np.exp(logits)
+
+        #print("Done EXP Logits, Time: " + str(time.time() - start))
+
+        predicted_probs = exp_logits / np.sum(exp_logits, axis=1, keepdims=True)
+        #print("Done predicted probs, Time: " + str(time.time() - start))
+
+        #print("Done Passing, Time: " + str(time.time() - start))
 
         # Compute the categorical cross-entropy loss.
         loss = -np.mean(np.log(predicted_probs[range(len(y_batch)), y_batch] + 1e-10))
 
-        print("Done computing loss, Time: " + str(time.time() - start))
+        #print("Done computing loss, Time: " + str(time.time() - start))
 
         # Compute gradients.
         dscores = predicted_probs
         dscores[range(len(y_batch)), y_batch] -= 1
         dscores /= len(y_batch)
 
-        print("Done computing gradients, Time: " + str(time.time() - start))
+        #print("Done computing gradients, Time: " + str(time.time() - start))
 
         dw = np.dot(x_batch_flat.T, dscores)
         db = np.sum(dscores, axis=0, keepdims=True)
 
-        print("Done computing sums, Time: " + str(time.time() - start))
+        #print("Done computing sums, Time: " + str(time.time() - start))
 
         # Update weights and bias.
         weights -= learning_rate * dw
         bias = bias - (learning_rate * db)
+
+        print(f'%done {((i+1)*batch_size)/total}')
+        print("Time: " + str(time.time() - start))
 
     # Print loss for monitoring.
     if epoch % 10 == 0:
