@@ -34,10 +34,6 @@ def ClearFolder(pathToFolder):
         except Exception as e:
             print('Failed to delete %s. Reason: %s' % (file_path, e))
 
-
-    
-    
-
 trainingFolder = "training Images"
 testingFolder = "testing Images"
 validationFolder = "validation Images"
