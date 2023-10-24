@@ -17,3 +17,6 @@ dataset.h5
 dataset.rar
 GPTh5LogisticWithPlainML.py
 PlainMLTest.py
+*.h5
+dataset10thousand.7z
+dataset500.rar
