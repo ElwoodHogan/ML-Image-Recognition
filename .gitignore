@@ -20,3 +20,4 @@ PlainMLTest.py
 *.h5
 dataset10thousand.7z
 dataset500.rar
+.DS_Store
