@@ -1,6 +1,5 @@
 import os
 import numpy as np
-from sklearn.linear_model import SGDClassifier
 from sklearn import svm
 from datasets import load_dataset
 from sklearn.metrics import accuracy_score
@@ -9,7 +8,7 @@ from sklearn.metrics import recall_score
 from sklearn.model_selection import GridSearchCV
 
 print("Loading training dataset...")
-subset = load_dataset("aharley/rvl_cdip", split="train[0:200000]")
+subset = load_dataset("aharley/rvl_cdip", split="train[0:120000]", cache_dir='F:/huggingface_rvlcdip')
 print("Training dataset loaded.")
 
 flattened_image_array = []
@@ -23,9 +22,6 @@ for picture in subset:
     target.append(picture['label'])
 
 print(len(flattened_image_array))
-#print(flattened_image_array)
-#print(target)
-
 
 # param_grid = {'C': [0.1,1, 10, 100],
 #               'gamma': [1,0.1,0.01,0.001],
@@ -34,18 +30,13 @@ print(len(flattened_image_array))
 # grid.fit(flattened_image_array ,target)
 # print(grid.best_estimator_)
 
-#sgd_classifier = SGDClassifier(loss="hinge", random_state=50, max_iter=1000)
 classifier = svm.SVC(kernel='rbf',C=1,gamma=0.001)
 
-#sgd_classifier.fit(flattened_image_array, target)
-# for epoch in range(0, 100):
-#     print(f'Epoch {epoch}')
-#     sgd_classifier.partial_fit(flattened_image_array, target, classes=np.unique(target))
 print('Training classifier.')
 classifier.fit(flattened_image_array, target)
 
-print('Loading testing dataset...')
-test_dataset = load_dataset("aharley/rvl_cdip", split="test[0:20000]")
+print('Loading testing/validation dataset...')
+test_dataset = load_dataset("aharley/rvl_cdip", split="test[0:20000]", cache_dir='F:/huggingface_rvlcdip')
 testing = test_dataset.select([i for i in range(len(test_dataset)) if i != 33669])
 print('Testing dataset loaded.')
 
@@ -61,9 +52,7 @@ for picture in testing:
 
 print('Running predictions using the classifier...')
 predictions = classifier.predict(flattened_testing_images)
-#predictions = sgd_classifier.predict(flattened_testing_images)
-# print(predictions)
-#print(testing_labels)
+
 accuracy = accuracy_score(testing_labels, predictions) * 100
 print('The accuracy of the model is: {:.2f}'.format(accuracy))
 precision = precision_score(testing_labels, predictions, average='weighted') * 100
