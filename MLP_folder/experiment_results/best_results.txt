@@ -1,0 +1,38 @@
+Validation Accuracy: 59.32%
+Validation Precision: 58.80%
+Validation Recall: 59.32%
+Validation F1 Score: 58.73%
+Test Accuracy: 60.04%
+Test Precision: 59.60%
+Test Recall: 60.04%
+Test F1 Score: 59.50%
+Parameters:
+        Image Size: 64x64px,
+        Number of Epochs: 10,
+        Train Subset Size: 320000,
+        Validation Subset Size: 20000
+        Test Subset Size: 39999
+MLP Classifier Parameters:
+        activation: relu
+        alpha: 0.0001
+        batch_size: 10000
+        beta_1: 0.9
+        beta_2: 0.999
+        early_stopping: False
+        epsilon: 1e-08
+        hidden_layer_sizes: (512, 256)
+        learning_rate: adaptive
+        learning_rate_init: 5e-05
+        max_fun: 15000
+        max_iter: 320
+        momentum: 0.9
+        n_iter_no_change: 10
+        nesterovs_momentum: True
+        power_t: 0.5
+        random_state: 1
+        shuffle: True
+        solver: adam
+        tol: 0.0001
+        validation_fraction: 0.1
+        verbose: 10
+        warm_start: False

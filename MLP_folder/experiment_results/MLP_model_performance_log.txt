@@ -1,0 +1,567 @@
+Image Size: 64x64
+Test Accuracy: 7.00%
+Test Precision: 9.68%
+Test Recall: 7.00%
+Test F1 Score: 2.10%
+Model Parameters: {'batch_size': 5000, 'hidden_layer_sizes': (256, 128), 'learning_rate_init': 0.01, 'max_iter': 250}
+
+Image Size: 64x64
+Test Accuracy: 7.00%
+Test Precision: 9.68%
+Test Recall: 7.00%
+Test F1 Score: 2.10%
+Model Parameters: {'batch_size': 5000, 'hidden_layer_sizes': (256, 128), 'learning_rate_init': 0.01, 'max_iter': 500}
+
+Image Size: 64x64
+Test Accuracy: 7.00%
+Test Precision: 9.68%
+Test Recall: 7.00%
+Test F1 Score: 2.10%
+Model Parameters: {'batch_size': 5000, 'hidden_layer_sizes': (256, 128), 'learning_rate_init': 0.01, 'max_iter': 1000}
+
+Image Size: 64x64
+Test Accuracy: 36.33%
+Test Precision: 40.07%
+Test Recall: 36.33%
+Test F1 Score: 33.03%
+Model Parameters: {'batch_size': 5000, 'hidden_layer_sizes': (256, 128), 'learning_rate_init': 0.001, 'max_iter': 250}
+
+Image Size: 64x64
+Test Accuracy: 36.33%
+Test Precision: 40.07%
+Test Recall: 36.33%
+Test F1 Score: 33.03%
+Model Parameters: {'batch_size': 5000, 'hidden_layer_sizes': (256, 128), 'learning_rate_init': 0.001, 'max_iter': 500}
+
+Image Size: 64x64
+Test Accuracy: 36.33%
+Test Precision: 40.07%
+Test Recall: 36.33%
+Test F1 Score: 33.03%
+Model Parameters: {'batch_size': 5000, 'hidden_layer_sizes': (256, 128), 'learning_rate_init': 0.001, 'max_iter': 1000}
+
+Image Size: 64x64
+Test Accuracy: 41.94%
+Test Precision: 40.58%
+Test Recall: 41.94%
+Test F1 Score: 39.07%
+Model Parameters: {'batch_size': 5000, 'hidden_layer_sizes': (256, 128), 'learning_rate_init': 0.0001, 'max_iter': 250}
+
+Image Size: 64x64
+Test Accuracy: 45.68%
+Test Precision: 46.12%
+Test Recall: 45.68%
+Test F1 Score: 44.56%
+Model Parameters: {'batch_size': 5000, 'hidden_layer_sizes': (256, 128), 'learning_rate_init': 0.0001, 'max_iter': 500}
+
+Image Size: 64x64
+Test Accuracy: 45.68%
+Test Precision: 46.12%
+Test Recall: 45.68%
+Test F1 Score: 44.56%
+Model Parameters: {'batch_size': 5000, 'hidden_layer_sizes': (256, 128), 'learning_rate_init': 0.0001, 'max_iter': 1000}
+
+Image Size: 64x64
+Test Accuracy: 7.14%
+Test Precision: 9.55%
+Test Recall: 7.14%
+Test F1 Score: 2.31%
+Model Parameters: {'batch_size': 5000, 'hidden_layer_sizes': (512, 256), 'learning_rate_init': 0.01, 'max_iter': 250}
+
+Image Size: 64x64
+Test Accuracy: 7.14%
+Test Precision: 9.55%
+Test Recall: 7.14%
+Test F1 Score: 2.31%
+Model Parameters: {'batch_size': 5000, 'hidden_layer_sizes': (512, 256), 'learning_rate_init': 0.01, 'max_iter': 500}
+
+Image Size: 64x64
+Test Accuracy: 7.14%
+Test Precision: 9.55%
+Test Recall: 7.14%
+Test F1 Score: 2.31%
+Model Parameters: {'batch_size': 5000, 'hidden_layer_sizes': (512, 256), 'learning_rate_init': 0.01, 'max_iter': 1000}
+
+Image Size: 64x64
+Test Accuracy: 35.99%
+Test Precision: 36.87%
+Test Recall: 35.99%
+Test F1 Score: 30.84%
+Model Parameters: {'batch_size': 5000, 'hidden_layer_sizes': (512, 256), 'learning_rate_init': 0.001, 'max_iter': 250}
+
+Image Size: 64x64
+Test Accuracy: 35.99%
+Test Precision: 36.87%
+Test Recall: 35.99%
+Test F1 Score: 30.84%
+Model Parameters: {'batch_size': 5000, 'hidden_layer_sizes': (512, 256), 'learning_rate_init': 0.001, 'max_iter': 500}
+
+Image Size: 64x64
+Test Accuracy: 35.99%
+Test Precision: 36.87%
+Test Recall: 35.99%
+Test F1 Score: 30.84%
+Model Parameters: {'batch_size': 5000, 'hidden_layer_sizes': (512, 256), 'learning_rate_init': 0.001, 'max_iter': 1000}
+
+Image Size: 64x64
+Test Accuracy: 45.87%
+Test Precision: 44.98%
+Test Recall: 45.87%
+Test F1 Score: 44.05%
+Model Parameters: {'batch_size': 5000, 'hidden_layer_sizes': (512, 256), 'learning_rate_init': 0.0001, 'max_iter': 250}
+
+Image Size: 64x64
+Test Accuracy: 47.54%
+Test Precision: 48.23%
+Test Recall: 47.54%
+Test F1 Score: 45.82%
+Model Parameters: {'batch_size': 5000, 'hidden_layer_sizes': (512, 256), 'learning_rate_init': 0.0001, 'max_iter': 500}
+
+Image Size: 64x64
+Test Accuracy: 47.54%
+Test Precision: 48.23%
+Test Recall: 47.54%
+Test F1 Score: 45.82%
+Model Parameters: {'batch_size': 5000, 'hidden_layer_sizes': (512, 256), 'learning_rate_init': 0.0001, 'max_iter': 1000}
+
+Image Size: 64x64
+Test Accuracy: 6.31%
+Test Precision: 0.40%
+Test Recall: 6.31%
+Test F1 Score: 0.75%
+Model Parameters: {'batch_size': 5000, 'hidden_layer_sizes': (1024, 512), 'learning_rate_init': 0.01, 'max_iter': 250}
+
+Image Size: 64x64
+Test Accuracy: 6.31%
+Test Precision: 0.40%
+Test Recall: 6.31%
+Test F1 Score: 0.75%
+Model Parameters: {'batch_size': 5000, 'hidden_layer_sizes': (1024, 512), 'learning_rate_init': 0.01, 'max_iter': 500}
+
+Image Size: 64x64
+Test Accuracy: 6.31%
+Test Precision: 0.40%
+Test Recall: 6.31%
+Test F1 Score: 0.75%
+Model Parameters: {'batch_size': 5000, 'hidden_layer_sizes': (1024, 512), 'learning_rate_init': 0.01, 'max_iter': 1000}
+
+Image Size: 64x64
+Test Accuracy: 36.45%
+Test Precision: 37.81%
+Test Recall: 36.45%
+Test F1 Score: 33.65%
+Model Parameters: {'batch_size': 5000, 'hidden_layer_sizes': (1024, 512), 'learning_rate_init': 0.001, 'max_iter': 250}
+
+Image Size: 64x64
+Test Accuracy: 36.45%
+Test Precision: 37.81%
+Test Recall: 36.45%
+Test F1 Score: 33.65%
+Model Parameters: {'batch_size': 5000, 'hidden_layer_sizes': (1024, 512), 'learning_rate_init': 0.001, 'max_iter': 500}
+
+Image Size: 64x64
+Test Accuracy: 36.45%
+Test Precision: 37.81%
+Test Recall: 36.45%
+Test F1 Score: 33.65%
+Model Parameters: {'batch_size': 5000, 'hidden_layer_sizes': (1024, 512), 'learning_rate_init': 0.001, 'max_iter': 1000}
+
+Image Size: 64x64
+Test Accuracy: 44.86%
+Test Precision: 47.88%
+Test Recall: 44.86%
+Test F1 Score: 43.99%
+Model Parameters: {'batch_size': 5000, 'hidden_layer_sizes': (1024, 512), 'learning_rate_init': 0.0001, 'max_iter': 250}
+
+Image Size: 64x64
+Test Accuracy: 44.86%
+Test Precision: 47.88%
+Test Recall: 44.86%
+Test F1 Score: 43.99%
+Model Parameters: {'batch_size': 5000, 'hidden_layer_sizes': (1024, 512), 'learning_rate_init': 0.0001, 'max_iter': 500}
+
+Image Size: 64x64
+Test Accuracy: 44.86%
+Test Precision: 47.88%
+Test Recall: 44.86%
+Test F1 Score: 43.99%
+Model Parameters: {'batch_size': 5000, 'hidden_layer_sizes': (1024, 512), 'learning_rate_init': 0.0001, 'max_iter': 1000}
+
+Image Size: 64x64
+Test Accuracy: 6.89%
+Test Precision: 5.48%
+Test Recall: 6.89%
+Test F1 Score: 2.00%
+Model Parameters: {'batch_size': 10000, 'hidden_layer_sizes': (256, 128), 'learning_rate_init': 0.01, 'max_iter': 250}
+
+Image Size: 64x64
+Test Accuracy: 6.89%
+Test Precision: 5.48%
+Test Recall: 6.89%
+Test F1 Score: 2.00%
+Model Parameters: {'batch_size': 10000, 'hidden_layer_sizes': (256, 128), 'learning_rate_init': 0.01, 'max_iter': 500}
+
+Image Size: 64x64
+Test Accuracy: 6.89%
+Test Precision: 5.48%
+Test Recall: 6.89%
+Test F1 Score: 2.00%
+Model Parameters: {'batch_size': 10000, 'hidden_layer_sizes': (256, 128), 'learning_rate_init': 0.01, 'max_iter': 1000}
+
+Image Size: 64x64
+Test Accuracy: 23.22%
+Test Precision: 29.69%
+Test Recall: 23.22%
+Test F1 Score: 19.33%
+Model Parameters: {'batch_size': 10000, 'hidden_layer_sizes': (256, 128), 'learning_rate_init': 0.001, 'max_iter': 250}
+
+Image Size: 64x64
+Test Accuracy: 23.22%
+Test Precision: 29.69%
+Test Recall: 23.22%
+Test F1 Score: 19.33%
+Model Parameters: {'batch_size': 10000, 'hidden_layer_sizes': (256, 128), 'learning_rate_init': 0.001, 'max_iter': 500}
+
+Image Size: 64x64
+Test Accuracy: 23.22%
+Test Precision: 29.69%
+Test Recall: 23.22%
+Test F1 Score: 19.33%
+Model Parameters: {'batch_size': 10000, 'hidden_layer_sizes': (256, 128), 'learning_rate_init': 0.001, 'max_iter': 1000}
+
+Image Size: 64x64
+Test Accuracy: 39.61%
+Test Precision: 36.75%
+Test Recall: 39.61%
+Test F1 Score: 35.94%
+Model Parameters: {'batch_size': 10000, 'hidden_layer_sizes': (256, 128), 'learning_rate_init': 0.0001, 'max_iter': 250}
+
+Image Size: 64x64
+Test Accuracy: 43.37%
+Test Precision: 41.62%
+Test Recall: 43.37%
+Test F1 Score: 40.40%
+Model Parameters: {'batch_size': 10000, 'hidden_layer_sizes': (256, 128), 'learning_rate_init': 0.0001, 'max_iter': 500}
+
+Image Size: 64x64
+Test Accuracy: 46.65%
+Test Precision: 46.18%
+Test Recall: 46.65%
+Test F1 Score: 45.93%
+Model Parameters: {'batch_size': 10000, 'hidden_layer_sizes': (256, 128), 'learning_rate_init': 0.0001, 'max_iter': 1000}
+
+Image Size: 64x64
+Test Accuracy: 7.13%
+Test Precision: 13.68%
+Test Recall: 7.13%
+Test F1 Score: 2.02%
+Model Parameters: {'batch_size': 10000, 'hidden_layer_sizes': (512, 256), 'learning_rate_init': 0.01, 'max_iter': 250}
+
+Image Size: 64x64
+Test Accuracy: 7.13%
+Test Precision: 13.68%
+Test Recall: 7.13%
+Test F1 Score: 2.02%
+Model Parameters: {'batch_size': 10000, 'hidden_layer_sizes': (512, 256), 'learning_rate_init': 0.01, 'max_iter': 500}
+
+Image Size: 64x64
+Test Accuracy: 7.13%
+Test Precision: 13.68%
+Test Recall: 7.13%
+Test F1 Score: 2.02%
+Model Parameters: {'batch_size': 10000, 'hidden_layer_sizes': (512, 256), 'learning_rate_init': 0.01, 'max_iter': 1000}
+
+Image Size: 64x64
+Test Accuracy: 32.46%
+Test Precision: 35.85%
+Test Recall: 32.46%
+Test F1 Score: 28.69%
+Model Parameters: {'batch_size': 10000, 'hidden_layer_sizes': (512, 256), 'learning_rate_init': 0.001, 'max_iter': 250}
+
+Image Size: 64x64
+Test Accuracy: 32.46%
+Test Precision: 35.85%
+Test Recall: 32.46%
+Test F1 Score: 28.69%
+Model Parameters: {'batch_size': 10000, 'hidden_layer_sizes': (512, 256), 'learning_rate_init': 0.001, 'max_iter': 500}
+
+Image Size: 64x64
+Test Accuracy: 32.46%
+Test Precision: 35.85%
+Test Recall: 32.46%
+Test F1 Score: 28.69%
+Model Parameters: {'batch_size': 10000, 'hidden_layer_sizes': (512, 256), 'learning_rate_init': 0.001, 'max_iter': 1000}
+
+Image Size: 64x64
+Test Accuracy: 42.58%
+Test Precision: 41.78%
+Test Recall: 42.58%
+Test F1 Score: 40.26%
+Model Parameters: {'batch_size': 10000, 'hidden_layer_sizes': (512, 256), 'learning_rate_init': 0.0001, 'max_iter': 250}
+
+Image Size: 64x64
+Test Accuracy: 45.30%
+Test Precision: 44.15%
+Test Recall: 45.30%
+Test F1 Score: 43.27%
+Model Parameters: {'batch_size': 10000, 'hidden_layer_sizes': (512, 256), 'learning_rate_init': 0.0001, 'max_iter': 500}
+
+Image Size: 64x64
+Test Accuracy: 45.30%
+Test Precision: 44.15%
+Test Recall: 45.30%
+Test F1 Score: 43.27%
+Model Parameters: {'batch_size': 10000, 'hidden_layer_sizes': (512, 256), 'learning_rate_init': 0.0001, 'max_iter': 1000}
+
+Image Size: 64x64
+Test Accuracy: 7.24%
+Test Precision: 10.19%
+Test Recall: 7.24%
+Test F1 Score: 2.18%
+Model Parameters: {'batch_size': 10000, 'hidden_layer_sizes': (1024, 512), 'learning_rate_init': 0.01, 'max_iter': 250}
+
+Image Size: 64x64
+Test Accuracy: 7.24%
+Test Precision: 10.19%
+Test Recall: 7.24%
+Test F1 Score: 2.18%
+Model Parameters: {'batch_size': 10000, 'hidden_layer_sizes': (1024, 512), 'learning_rate_init': 0.01, 'max_iter': 500}
+
+Image Size: 64x64
+Test Accuracy: 7.24%
+Test Precision: 10.19%
+Test Recall: 7.24%
+Test F1 Score: 2.18%
+Model Parameters: {'batch_size': 10000, 'hidden_layer_sizes': (1024, 512), 'learning_rate_init': 0.01, 'max_iter': 1000}
+
+Image Size: 64x64
+Test Accuracy: 31.75%
+Test Precision: 32.96%
+Test Recall: 31.75%
+Test F1 Score: 30.12%
+Model Parameters: {'batch_size': 10000, 'hidden_layer_sizes': (1024, 512), 'learning_rate_init': 0.001, 'max_iter': 250}
+
+Image Size: 64x64
+Test Accuracy: 31.75%
+Test Precision: 32.96%
+Test Recall: 31.75%
+Test F1 Score: 30.12%
+Model Parameters: {'batch_size': 10000, 'hidden_layer_sizes': (1024, 512), 'learning_rate_init': 0.001, 'max_iter': 500}
+
+Image Size: 64x64
+Test Accuracy: 31.75%
+Test Precision: 32.96%
+Test Recall: 31.75%
+Test F1 Score: 30.12%
+Model Parameters: {'batch_size': 10000, 'hidden_layer_sizes': (1024, 512), 'learning_rate_init': 0.001, 'max_iter': 1000}
+
+Image Size: 64x64
+Test Accuracy: 34.13%
+Test Precision: 43.22%
+Test Recall: 34.13%
+Test F1 Score: 33.25%
+Model Parameters: {'batch_size': 10000, 'hidden_layer_sizes': (1024, 512), 'learning_rate_init': 0.0001, 'max_iter': 250}
+
+Image Size: 64x64
+Test Accuracy: 34.13%
+Test Precision: 43.22%
+Test Recall: 34.13%
+Test F1 Score: 33.25%
+Model Parameters: {'batch_size': 10000, 'hidden_layer_sizes': (1024, 512), 'learning_rate_init': 0.0001, 'max_iter': 500}
+
+Image Size: 64x64
+Test Accuracy: 34.13%
+Test Precision: 43.22%
+Test Recall: 34.13%
+Test F1 Score: 33.25%
+Model Parameters: {'batch_size': 10000, 'hidden_layer_sizes': (1024, 512), 'learning_rate_init': 0.0001, 'max_iter': 1000}
+
+Image Size: 64x64
+Test Accuracy: 6.43%
+Test Precision: 0.42%
+Test Recall: 6.43%
+Test F1 Score: 0.78%
+Model Parameters: {'batch_size': 20000, 'hidden_layer_sizes': (256, 128), 'learning_rate_init': 0.01, 'max_iter': 250}
+
+Image Size: 64x64
+Test Accuracy: 6.43%
+Test Precision: 0.42%
+Test Recall: 6.43%
+Test F1 Score: 0.78%
+Model Parameters: {'batch_size': 20000, 'hidden_layer_sizes': (256, 128), 'learning_rate_init': 0.01, 'max_iter': 500}
+
+Image Size: 64x64
+Test Accuracy: 6.43%
+Test Precision: 0.42%
+Test Recall: 6.43%
+Test F1 Score: 0.78%
+Model Parameters: {'batch_size': 20000, 'hidden_layer_sizes': (256, 128), 'learning_rate_init': 0.01, 'max_iter': 1000}
+
+Image Size: 64x64
+Test Accuracy: 29.32%
+Test Precision: 30.29%
+Test Recall: 29.32%
+Test F1 Score: 25.19%
+Model Parameters: {'batch_size': 20000, 'hidden_layer_sizes': (256, 128), 'learning_rate_init': 0.001, 'max_iter': 250}
+
+Image Size: 64x64
+Test Accuracy: 31.28%
+Test Precision: 32.40%
+Test Recall: 31.28%
+Test F1 Score: 27.90%
+Model Parameters: {'batch_size': 20000, 'hidden_layer_sizes': (256, 128), 'learning_rate_init': 0.001, 'max_iter': 500}
+
+Image Size: 64x64
+Test Accuracy: 31.28%
+Test Precision: 32.40%
+Test Recall: 31.28%
+Test F1 Score: 27.90%
+Model Parameters: {'batch_size': 20000, 'hidden_layer_sizes': (256, 128), 'learning_rate_init': 0.001, 'max_iter': 1000}
+
+Image Size: 64x64
+Test Accuracy: 37.64%
+Test Precision: 35.17%
+Test Recall: 37.64%
+Test F1 Score: 34.38%
+Model Parameters: {'batch_size': 20000, 'hidden_layer_sizes': (256, 128), 'learning_rate_init': 0.0001, 'max_iter': 250}
+
+Image Size: 64x64
+Test Accuracy: 41.90%
+Test Precision: 39.44%
+Test Recall: 41.90%
+Test F1 Score: 39.06%
+Model Parameters: {'batch_size': 20000, 'hidden_layer_sizes': (256, 128), 'learning_rate_init': 0.0001, 'max_iter': 500}
+
+Image Size: 64x64
+Test Accuracy: 45.89%
+Test Precision: 44.30%
+Test Recall: 45.89%
+Test F1 Score: 44.54%
+Model Parameters: {'batch_size': 20000, 'hidden_layer_sizes': (256, 128), 'learning_rate_init': 0.0001, 'max_iter': 1000}
+
+Image Size: 64x64
+Test Accuracy: 6.60%
+Test Precision: 6.05%
+Test Recall: 6.60%
+Test F1 Score: 1.44%
+Model Parameters: {'batch_size': 20000, 'hidden_layer_sizes': (512, 256), 'learning_rate_init': 0.01, 'max_iter': 250}
+
+Image Size: 64x64
+Test Accuracy: 6.60%
+Test Precision: 6.05%
+Test Recall: 6.60%
+Test F1 Score: 1.44%
+Model Parameters: {'batch_size': 20000, 'hidden_layer_sizes': (512, 256), 'learning_rate_init': 0.01, 'max_iter': 500}
+
+Image Size: 64x64
+Test Accuracy: 6.60%
+Test Precision: 6.05%
+Test Recall: 6.60%
+Test F1 Score: 1.44%
+Model Parameters: {'batch_size': 20000, 'hidden_layer_sizes': (512, 256), 'learning_rate_init': 0.01, 'max_iter': 1000}
+
+Image Size: 64x64
+Test Accuracy: 6.14%
+Test Precision: 6.33%
+Test Recall: 6.14%
+Test F1 Score: 0.95%
+Model Parameters: {'batch_size': 20000, 'hidden_layer_sizes': (512, 256), 'learning_rate_init': 0.001, 'max_iter': 250}
+
+Image Size: 64x64
+Test Accuracy: 6.14%
+Test Precision: 6.33%
+Test Recall: 6.14%
+Test F1 Score: 0.95%
+Model Parameters: {'batch_size': 20000, 'hidden_layer_sizes': (512, 256), 'learning_rate_init': 0.001, 'max_iter': 500}
+
+Image Size: 64x64
+Test Accuracy: 6.14%
+Test Precision: 6.33%
+Test Recall: 6.14%
+Test F1 Score: 0.95%
+Model Parameters: {'batch_size': 20000, 'hidden_layer_sizes': (512, 256), 'learning_rate_init': 0.001, 'max_iter': 1000}
+
+Image Size: 64x64
+Test Accuracy: 39.84%
+Test Precision: 37.86%
+Test Recall: 39.84%
+Test F1 Score: 36.37%
+Model Parameters: {'batch_size': 20000, 'hidden_layer_sizes': (512, 256), 'learning_rate_init': 0.0001, 'max_iter': 250}
+
+Image Size: 64x64
+Test Accuracy: 45.15%
+Test Precision: 44.24%
+Test Recall: 45.15%
+Test F1 Score: 43.63%
+Model Parameters: {'batch_size': 20000, 'hidden_layer_sizes': (512, 256), 'learning_rate_init': 0.0001, 'max_iter': 500}
+
+Image Size: 64x64
+Test Accuracy: 46.26%
+Test Precision: 46.50%
+Test Recall: 46.26%
+Test F1 Score: 44.85%
+Model Parameters: {'batch_size': 20000, 'hidden_layer_sizes': (512, 256), 'learning_rate_init': 0.0001, 'max_iter': 1000}
+
+Image Size: 64x64
+Test Accuracy: 12.08%
+Test Precision: 7.70%
+Test Recall: 12.08%
+Test F1 Score: 6.05%
+Model Parameters: {'batch_size': 20000, 'hidden_layer_sizes': (1024, 512), 'learning_rate_init': 0.01, 'max_iter': 250}
+
+Image Size: 64x64
+Test Accuracy: 12.08%
+Test Precision: 7.70%
+Test Recall: 12.08%
+Test F1 Score: 6.05%
+Model Parameters: {'batch_size': 20000, 'hidden_layer_sizes': (1024, 512), 'learning_rate_init': 0.01, 'max_iter': 500}
+
+Image Size: 64x64
+Test Accuracy: 12.08%
+Test Precision: 7.70%
+Test Recall: 12.08%
+Test F1 Score: 6.05%
+Model Parameters: {'batch_size': 20000, 'hidden_layer_sizes': (1024, 512), 'learning_rate_init': 0.01, 'max_iter': 1000}
+
+Image Size: 64x64
+Test Accuracy: 7.28%
+Test Precision: 9.47%
+Test Recall: 7.28%
+Test F1 Score: 2.33%
+Model Parameters: {'batch_size': 20000, 'hidden_layer_sizes': (1024, 512), 'learning_rate_init': 0.001, 'max_iter': 250}
+
+Image Size: 64x64
+Test Accuracy: 7.28%
+Test Precision: 9.47%
+Test Recall: 7.28%
+Test F1 Score: 2.33%
+Model Parameters: {'batch_size': 20000, 'hidden_layer_sizes': (1024, 512), 'learning_rate_init': 0.001, 'max_iter': 500}
+
+Image Size: 64x64
+Test Accuracy: 7.28%
+Test Precision: 9.47%
+Test Recall: 7.28%
+Test F1 Score: 2.33%
+Model Parameters: {'batch_size': 20000, 'hidden_layer_sizes': (1024, 512), 'learning_rate_init': 0.001, 'max_iter': 1000}
+
+Image Size: 64x64
+Test Accuracy: 36.57%
+Test Precision: 40.13%
+Test Recall: 36.57%
+Test F1 Score: 32.95%
+Model Parameters: {'batch_size': 20000, 'hidden_layer_sizes': (1024, 512), 'learning_rate_init': 0.0001, 'max_iter': 250}
+
+Image Size: 64x64
+Test Accuracy: 38.61%
+Test Precision: 40.04%
+Test Recall: 38.61%
+Test F1 Score: 35.16%
+Model Parameters: {'batch_size': 20000, 'hidden_layer_sizes': (1024, 512), 'learning_rate_init': 0.0001, 'max_iter': 500}
+
+Image Size: 64x64
+Test Accuracy: 38.61%
+Test Precision: 40.04%
+Test Recall: 38.61%
+Test F1 Score: 35.16%
+Model Parameters: {'batch_size': 20000, 'hidden_layer_sizes': (1024, 512), 'learning_rate_init': 0.0001, 'max_iter': 1000}
+
